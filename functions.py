@@ -14,7 +14,7 @@ def choose_book(path):
 
 def send_email(book):
     sender = os.environ.get('SENDER')
-    password = os.environ('PASSWORD')
+    password = os.environ.get('PASSWORD')
     receiver = os.environ.get('RECEIVER')
 
     subject = 'Your book'
